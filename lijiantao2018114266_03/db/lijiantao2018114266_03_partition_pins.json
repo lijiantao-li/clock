@@ -1,0 +1,17 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "CLK_4HZ",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_100HZ",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

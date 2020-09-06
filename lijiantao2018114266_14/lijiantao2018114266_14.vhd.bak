@@ -1,0 +1,78 @@
+--该电路VHDL代码用于设置FPGA实验开发板上6个数码管上显示的内容，根据状态控制器的状态，显示相关电路模块输出的结果
+--当状态控制器状态为000、001、010时，显示数字钟电路运行的结果，只不过000是正常显示，001和010是闪烁显示设置的分钟或小时
+--当状态控制器状态为011和100时，显示闹钟设置的结果，只不过011是闪烁显示分钟，100是闪烁显示小时，秒固定值为00
+--当状态控制器状态为101时，显示秒表电路运行的结果
+LIBRARY IEEE;--引用IEEE库
+USE IEEE.STD_LOGIC_1164.ALL;--STD_LOGIC、STD_LOGIC_VECTOR数据类型在此程序包中，而且程序包
+--还包含此两种数据类型的逻辑运算。且IEEE库不属于VHDL标准库，必须予以声明
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;--对STD_LOGIC_VECTOR数据类型进行无符号数运算需声明UNSIGNED，
+--如需进行有符号数运算，则需声明SIGNED
+
+ENTITY lijiantao2018114266_14 IS
+PORT(--该模块电路输入有数字钟输出的秒、分、时，闹钟输出的秒、分、时，秒表输出的百分之一秒、秒、分，使数码管闪烁的频率2HZ时钟信号
+--及状态控制器的3个输出 
+		                              STATE: IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+							              CLK_2P: IN STD_LOGIC;
+	SZSSHI,SZSGE,SZFSHI,SZFGE,SZMSHI,SZMGE: IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+	MBBSHI,MBBGE,MBMSHI,MBMGE,MBFSHI,MBFGE: IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+	             NZFSHI,NZFGE,NZSSHI,NZSGE: IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+	XSSSHI,XSSGE,XSFSHI,XSFGE,XSMSHI,XSMGE:OUT STD_LOGIC_VECTOR(6 DOWNTO 0));
+END ENTITY lijiantao2018114266_14;
+
+ARCHITECTURE A OF lijiantao2018114266_14 IS
+SIGNAL TMP0,TMP1,TMP2,TMP3,TMP4,TMP5:STD_LOGIC_VECTOR(6 DOWNTO 0);
+SIGNAL TEMP1,TEMP0:STD_LOGIC_VECTOR(6 DOWNTO 0);
+SIGNAL CLK:STD_LOGIC_VECTOR(6 DOWNTO 0);
+BEGIN
+U1:BLOCK
+BEGIN
+	PROCESS(CLK_2P,STATE)--进程，用于设置闪烁的输出结果
+	BEGIN--有四种状态需要使数码管闪烁
+		IF(STATE="001")THEN--调整时钟分钟时
+			IF(CLK_2P='0')THEN--当2HZ的闪烁时钟信号为低电平时，数码管熄灭
+				TEMP0<="1111111";TEMP1<="1111111";
+			ELSE--当2HZ的闪烁时钟信号为高电平时，数码管正常显示时钟的分钟
+				TEMP0<=SZFGE;TEMP1<=SZFSHI;
+			END IF;
+		ELSIF(STATE="010")THEN--调整时钟小时时
+			IF(CLK_2P='0')THEN--当2HZ的闪烁时钟信号为低电平时，数码管熄灭
+				TEMP0<="1111111";TEMP1<="1111111";
+			ELSE--当2HZ的闪烁时钟信号为高电平时，数码管正常显示时钟的小时
+				TEMP0<=SZSGE;TEMP1<=SZSSHI;
+			END IF;
+		ELSIF(STATE="011")THEN--调整闹钟分钟时
+			IF(CLK_2P='0')THEN--当2HZ的闪烁时钟信号为低电平时，数码管熄灭
+				TEMP0<="1111111";TEMP1<="1111111";
+			ELSE--当2HZ的闪烁时钟信号为高电平时，数码管正常显示闹钟的分钟
+				TEMP0<=NZFGE;TEMP1<=NZFSHI;
+			END IF;
+		ELSIF(STATE="100")THEN--调整闹钟小时时
+			IF(CLK_2P='0')THEN--当2HZ的闪烁时钟信号为低电平时，数码管熄灭
+				TEMP0<="1111111";TEMP1<="1111111";
+			ELSE--当2HZ的闪烁时钟信号为高电平时，数码管正常显示闹钟的小时
+				TEMP0<=NZSGE;TEMP1<=NZSSHI;
+			END IF;
+		END IF;
+	END PROCESS;
+END BLOCK U1;
+U2:BLOCK
+BEGIN
+	PROCESS(STATE)--进程，根据状态控制器的状态，设置6个数码管上显示的内容
+	BEGIN
+		IF(STATE="000")THEN--正常显示时钟运行结果时，将时钟的秒、分钟、小时数正常显示在6个数码管上
+			TMP5<=SZSSHI;TMP4<=SZSGE;TMP3<=SZFSHI;TMP2<=SZFGE;TMP1<=SZMSHI;TMP0<=SZMGE;
+		ELSIF(STATE="001")THEN--设置时钟分钟时，将时钟的分钟闪烁显示在中间两位数码管上，时钟的秒和小时正常显示
+			TMP5<=SZSSHI;TMP4<=SZSGE;TMP3<=TEMP1;TMP2<=TEMP0;TMP1<=SZMSHI;TMP0<=SZMGE;
+		ELSIF(STATE="010")THEN--设置时钟小时时，将时钟的小时闪烁显示在中间两位数码管上，时钟的秒和分钟正常显示
+			TMP5<=TEMP1;TMP4<=TEMP0;TMP3<=SZFSHI;TMP2<=SZFGE;TMP1<=SZMSHI;TMP0<=SZMGE;
+		ELSIF(STATE="011")THEN--设置闹钟分钟时，将闹钟的分钟闪烁显示在中间两位数码管上，闹钟的秒和小时正常显示
+			TMP5<=NZSSHI;TMP4<=NZSGE;TMP3<=TEMP1;TMP2<=TEMP0;TMP1<="0000001";TMP0<="0000001";
+		ELSIF(STATE="100")THEN--设置闹钟小时时，将闹钟的小时闪烁显示在中间两位数码管上，闹钟的秒和分钟正常显示
+			TMP5<=TEMP1;TMP4<=TEMP0;TMP3<=NZFSHI;TMP2<=NZFGE;TMP1<="0000001";TMP0<="0000001";
+		ELSIF(STATE="101")THEN--秒表正常工作时，将秒表的百分之一秒、秒、分钟正常显示在6个数码管上
+			TMP5<=MBFSHI;TMP4<=MBFGE;TMP3<=MBMSHI;TMP2<=MBMGE;TMP1<=MBBSHI;TMP0<=MBBGE;
+		END IF;
+	END PROCESS;
+	XSSSHI<=TMP5;XSSGE<=TMP4;XSFSHI<=TMP3;XSFGE<=TMP2;XSMSHI<=TMP1;XSMGE<=TMP0;
+END BLOCK U2;
+END ARCHITECTURE A;

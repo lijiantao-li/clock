@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "HGEWEI[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HGEWEI[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HGEWEI[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HGEWEI[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HSHIWEI[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HSHIWEI[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HSHIWEI[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HSHIWEI[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_1H",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

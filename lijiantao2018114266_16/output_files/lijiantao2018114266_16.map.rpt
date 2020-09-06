@@ -1,0 +1,916 @@
+Analysis & Synthesis report for lijiantao2018114266_16
+Fri Sep 04 20:20:06 2020
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Sep 04 20:20:06 2020       ;
+; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                   ; lijiantao2018114266_16                      ;
+; Top-level Entity Name           ; lijiantao2018114266_16                      ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 127                                         ;
+; Total pins                      ; 25                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                     ;
++---------------------------------------------------------------------------------+------------------------+------------------------+
+; Option                                                                          ; Setting                ; Default Value          ;
++---------------------------------------------------------------------------------+------------------------+------------------------+
+; Device                                                                          ; 5CSEMA5F31C6           ;                        ;
+; Top-level entity name                                                           ; lijiantao2018114266_16 ; lijiantao2018114266_16 ;
+; Family name                                                                     ; Cyclone V              ; Cyclone V              ;
+; Use smart compilation                                                           ; Off                    ; Off                    ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                     ; On                     ;
+; Enable compact report table                                                     ; Off                    ; Off                    ;
+; Restructure Multiplexers                                                        ; Auto                   ; Auto                   ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                    ; Off                    ;
+; Create Debugging Nodes for IP Cores                                             ; Off                    ; Off                    ;
+; Preserve fewer node names                                                       ; On                     ; On                     ;
+; OpenCore Plus hardware evaluation                                               ; Enable                 ; Enable                 ;
+; Verilog Version                                                                 ; Verilog_2001           ; Verilog_2001           ;
+; VHDL Version                                                                    ; VHDL_1993              ; VHDL_1993              ;
+; State Machine Processing                                                        ; Auto                   ; Auto                   ;
+; Safe State Machine                                                              ; Off                    ; Off                    ;
+; Extract Verilog State Machines                                                  ; On                     ; On                     ;
+; Extract VHDL State Machines                                                     ; On                     ; On                     ;
+; Ignore Verilog initial constructs                                               ; Off                    ; Off                    ;
+; Iteration limit for constant Verilog loops                                      ; 5000                   ; 5000                   ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                    ; 250                    ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                     ; On                     ;
+; Infer RAMs from Raw Logic                                                       ; On                     ; On                     ;
+; Parallel Synthesis                                                              ; On                     ; On                     ;
+; DSP Block Balancing                                                             ; Auto                   ; Auto                   ;
+; NOT Gate Push-Back                                                              ; On                     ; On                     ;
+; Power-Up Don't Care                                                             ; On                     ; On                     ;
+; Remove Redundant Logic Cells                                                    ; Off                    ; Off                    ;
+; Remove Duplicate Registers                                                      ; On                     ; On                     ;
+; Ignore CARRY Buffers                                                            ; Off                    ; Off                    ;
+; Ignore CASCADE Buffers                                                          ; Off                    ; Off                    ;
+; Ignore GLOBAL Buffers                                                           ; Off                    ; Off                    ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                    ; Off                    ;
+; Ignore LCELL Buffers                                                            ; Off                    ; Off                    ;
+; Ignore SOFT Buffers                                                             ; On                     ; On                     ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                    ; Off                    ;
+; Optimization Technique                                                          ; Balanced               ; Balanced               ;
+; Carry Chain Length                                                              ; 70                     ; 70                     ;
+; Auto Carry Chains                                                               ; On                     ; On                     ;
+; Auto Open-Drain Pins                                                            ; On                     ; On                     ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                    ; Off                    ;
+; Auto ROM Replacement                                                            ; On                     ; On                     ;
+; Auto RAM Replacement                                                            ; On                     ; On                     ;
+; Auto DSP Block Replacement                                                      ; On                     ; On                     ;
+; Auto Shift Register Replacement                                                 ; Auto                   ; Auto                   ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto                   ; Auto                   ;
+; Auto Clock Enable Replacement                                                   ; On                     ; On                     ;
+; Strict RAM Replacement                                                          ; Off                    ; Off                    ;
+; Allow Synchronous Control Signals                                               ; On                     ; On                     ;
+; Force Use of Synchronous Clear Signals                                          ; Off                    ; Off                    ;
+; Auto Resource Sharing                                                           ; Off                    ; Off                    ;
+; Allow Any RAM Size For Recognition                                              ; Off                    ; Off                    ;
+; Allow Any ROM Size For Recognition                                              ; Off                    ; Off                    ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                    ; Off                    ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                     ; On                     ;
+; Ignore translate_off and synthesis_off directives                               ; Off                    ; Off                    ;
+; Timing-Driven Synthesis                                                         ; On                     ; On                     ;
+; Report Parameter Settings                                                       ; On                     ; On                     ;
+; Report Source Assignments                                                       ; On                     ; On                     ;
+; Report Connectivity Checks                                                      ; On                     ; On                     ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                    ; Off                    ;
+; Synchronization Register Chain Length                                           ; 3                      ; 3                      ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation     ; Normal compilation     ;
+; HDL message level                                                               ; Level2                 ; Level2                 ;
+; Suppress Register Optimization Related Messages                                 ; Off                    ; Off                    ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000                   ; 5000                   ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                   ; 5000                   ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                    ; 100                    ;
+; Clock MUX Protection                                                            ; On                     ; On                     ;
+; Auto Gated Clock Conversion                                                     ; Off                    ; Off                    ;
+; Block Design Naming                                                             ; Auto                   ; Auto                   ;
+; SDC constraint protection                                                       ; Off                    ; Off                    ;
+; Synthesis Effort                                                                ; Auto                   ; Auto                   ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                     ; On                     ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                    ; Off                    ;
+; Analysis & Synthesis Message Level                                              ; Medium                 ; Medium                 ;
+; Disable Register Merging Across Hierarchies                                     ; Auto                   ; Auto                   ;
+; Resource Aware Inference For Block RAM                                          ; On                     ; On                     ;
+; Automatic Parallel Synthesis                                                    ; On                     ; On                     ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                    ; Off                    ;
++---------------------------------------------------------------------------------+------------------------+------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processors 3-6         ;   0.1%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++------------------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path                     ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                    ; Library ;
++------------------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+; ../lijiantao2018114266_17/lijiantao2018114266_17.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_17/lijiantao2018114266_17.vhd ;         ;
+; ../lijiantao2018114266_01/lijiantao2018114266_01.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_01/lijiantao2018114266_01.vhd ;         ;
+; ../lijiantao2018114266_02/lijiantao2018114266_02.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_02/lijiantao2018114266_02.vhd ;         ;
+; ../lijiantao2018114266_03/lijiantao2018114266_03.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_03/lijiantao2018114266_03.vhd ;         ;
+; ../lijiantao2018114266_04/lijiantao2018114266_04.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_04/lijiantao2018114266_04.vhd ;         ;
+; ../lijiantao2018114266_05/lijiantao2018114266_05.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd ;         ;
+; ../lijiantao2018114266_06/lijiantao2018114266_06.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_06/lijiantao2018114266_06.vhd ;         ;
+; ../lijiantao2018114266_07/lijiantao2018114266_07.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_07/lijiantao2018114266_07.vhd ;         ;
+; ../lijiantao2018114266_08/lijiantao2018114266_08.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_08/lijiantao2018114266_08.vhd ;         ;
+; ../lijiantao2018114266_09/lijiantao2018114266_09.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_09/lijiantao2018114266_09.vhd ;         ;
+; ../lijiantao2018114266_10/lijiantao2018114266_10.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd ;         ;
+; ../lijiantao2018114266_11/lijiantao2018114266_11.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_11/lijiantao2018114266_11.vhd ;         ;
+; ../lijiantao2018114266_12/lijiantao2018114266_12.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd ;         ;
+; ../lijiantao2018114266_13/lijiantao2018114266_13.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd ;         ;
+; ../lijiantao2018114266_14/lijiantao2018114266_14.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd ;         ;
+; ../lijiantao2018114266_15/lijiantao2018114266_15.vhd ; yes             ; User VHDL File                     ; D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd ;         ;
+; lijiantao2018114266_16.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/Desktop/wo/lijiantao2018114266_16/lijiantao2018114266_16.bdf ;         ;
++------------------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                        ;
++---------------------------------------------+--------------------------------------+
+; Resource                                    ; Usage                                ;
++---------------------------------------------+--------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 263                                  ;
+;                                             ;                                      ;
+; Combinational ALUT usage for logic          ; 441                                  ;
+;     -- 7 input functions                    ; 22                                   ;
+;     -- 6 input functions                    ; 61                                   ;
+;     -- 5 input functions                    ; 60                                   ;
+;     -- 4 input functions                    ; 151                                  ;
+;     -- <=3 input functions                  ; 147                                  ;
+;                                             ;                                      ;
+; Dedicated logic registers                   ; 127                                  ;
+;                                             ;                                      ;
+; I/O pins                                    ; 25                                   ;
+;                                             ;                                      ;
+; Total DSP Blocks                            ; 0                                    ;
+;                                             ;                                      ;
+; Maximum fan-out node                        ; lijiantao2018114266_05:inst29|TMP[0] ;
+; Maximum fan-out                             ; 84                                   ;
+; Total fan-out                               ; 2155                                 ;
+; Average fan-out                             ; 3.49                                 ;
++---------------------------------------------+--------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                         ;
++------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name            ; Library Name ;
++------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+------------------------+--------------+
+; |lijiantao2018114266_16            ; 441 (4)             ; 127 (13)                  ; 0                 ; 0          ; 25   ; 0            ; |lijiantao2018114266_16                               ; lijiantao2018114266_16 ; work         ;
+;    |lijiantao2018114266_01:inst2|  ; 21 (21)             ; 17 (17)                   ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_01:inst2  ; lijiantao2018114266_01 ; work         ;
+;    |lijiantao2018114266_02:inst|   ; 9 (9)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_02:inst   ; lijiantao2018114266_02 ; work         ;
+;    |lijiantao2018114266_03:inst3|  ; 13 (13)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_03:inst3  ; lijiantao2018114266_03 ; work         ;
+;    |lijiantao2018114266_04:inst4|  ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_04:inst4  ; lijiantao2018114266_04 ; work         ;
+;    |lijiantao2018114266_05:inst29| ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_05:inst29 ; lijiantao2018114266_05 ; work         ;
+;    |lijiantao2018114266_05:inst5|  ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_05:inst5  ; lijiantao2018114266_05 ; work         ;
+;    |lijiantao2018114266_06:inst57| ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_06:inst57 ; lijiantao2018114266_06 ; work         ;
+;    |lijiantao2018114266_07:inst31| ; 9 (9)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_07:inst31 ; lijiantao2018114266_07 ; work         ;
+;    |lijiantao2018114266_07:inst40| ; 9 (9)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_07:inst40 ; lijiantao2018114266_07 ; work         ;
+;    |lijiantao2018114266_07:inst48| ; 8 (8)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_07:inst48 ; lijiantao2018114266_07 ; work         ;
+;    |lijiantao2018114266_08:inst32| ; 11 (11)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_08:inst32 ; lijiantao2018114266_08 ; work         ;
+;    |lijiantao2018114266_08:inst49| ; 11 (11)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_08:inst49 ; lijiantao2018114266_08 ; work         ;
+;    |lijiantao2018114266_09:inst33| ; 29 (29)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_09:inst33 ; lijiantao2018114266_09 ; work         ;
+;    |lijiantao2018114266_10:inst34| ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_10:inst34 ; lijiantao2018114266_10 ; work         ;
+;    |lijiantao2018114266_11:inst35| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_11:inst35 ; lijiantao2018114266_11 ; work         ;
+;    |lijiantao2018114266_12:inst36| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst36 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst50| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst50 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst51| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst51 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst52| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst52 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst53| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst53 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst54| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst54 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst55| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst55 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst56| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst56 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst59| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst59 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst60| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst60 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst61| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst61 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst62| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst62 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst63| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst63 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst64| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst64 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst65| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst65 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_12:inst66| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_12:inst66 ; lijiantao2018114266_12 ; work         ;
+;    |lijiantao2018114266_14:inst1|  ; 172 (172)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_14:inst1  ; lijiantao2018114266_14 ; work         ;
+;    |lijiantao2018114266_17:inst6|  ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lijiantao2018114266_16|lijiantao2018114266_17:inst6  ; lijiantao2018114266_17 ; work         ;
++------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------+------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                  ;
++-----------------------------------------------------+---------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                   ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------------------------+------------------------+
+; lijiantao2018114266_14:inst1|TMP0[6]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP4[6]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP5[6]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP3[6]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP2[6]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP1[6]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP0[5]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP4[5]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP5[5]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP3[5]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP2[5]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP1[5]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP0[4]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP4[4]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP5[4]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP3[4]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP2[4]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP1[4]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP0[3]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP4[3]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP5[3]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP3[3]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP2[3]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP1[3]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP0[2]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP4[2]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP5[2]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP3[2]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP2[2]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP1[2]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP0[1]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP4[1]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP5[1]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP3[1]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP2[1]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP1[1]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP0[0]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP4[0]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP5[0]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP1[0]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP2[0]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|TMP3[0]                ; lijiantao2018114266_14:inst1|LED[3]   ; yes                    ;
+; lijiantao2018114266_14:inst1|LED[1]                 ; GND                                   ; yes                    ;
+; lijiantao2018114266_14:inst1|LED[0]                 ; GND                                   ; yes                    ;
+; lijiantao2018114266_14:inst1|TEMP0[6]               ; lijiantao2018114266_14:inst1|TEMP1[0] ; yes                    ;
+; lijiantao2018114266_14:inst1|TEMP1[6]               ; lijiantao2018114266_14:inst1|TEMP1[0] ; yes                    ;
+; lijiantao2018114266_14:inst1|TEMP0[5]               ; lijiantao2018114266_14:inst1|TEMP1[0] ; yes                    ;
+; lijiantao2018114266_14:inst1|TEMP1[5]               ; lijiantao2018114266_14:inst1|TEMP1[0] ; yes                    ;
+; lijiantao2018114266_14:inst1|TEMP0[4]               ; lijiantao2018114266_14:inst1|TEMP1[0] ; yes                    ;
+; lijiantao2018114266_14:inst1|TEMP1[4]               ; lijiantao2018114266_14:inst1|TEMP1[0] ; yes                    ;
+; lijiantao2018114266_14:inst1|TEMP0[3]               ; lijiantao2018114266_14:inst1|TEMP1[0] ; yes                    ;
+; lijiantao2018114266_14:inst1|TEMP1[3]               ; lijiantao2018114266_14:inst1|TEMP1[0] ; yes                    ;
+; lijiantao2018114266_14:inst1|TEMP0[2]               ; lijiantao2018114266_14:inst1|TEMP1[0] ; yes                    ;
+; lijiantao2018114266_14:inst1|TEMP1[2]               ; lijiantao2018114266_14:inst1|TEMP1[0] ; yes                    ;
+; lijiantao2018114266_14:inst1|TEMP0[1]               ; lijiantao2018114266_14:inst1|TEMP1[0] ; yes                    ;
+; lijiantao2018114266_14:inst1|TEMP1[1]               ; lijiantao2018114266_14:inst1|TEMP1[0] ; yes                    ;
+; lijiantao2018114266_14:inst1|TEMP0[0]               ; lijiantao2018114266_14:inst1|TEMP1[0] ; yes                    ;
+; lijiantao2018114266_14:inst1|TEMP1[0]               ; lijiantao2018114266_14:inst1|TEMP1[0] ; yes                    ;
+; lijiantao2018114266_09:inst33|CLK_100               ; lijiantao2018114266_14:inst1|Equal0   ; yes                    ;
+; Number of user-specified and inferred latches = 59  ;                                       ;                        ;
++-----------------------------------------------------+---------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 127   ;
+; Number of registers using Synchronous Clear  ; 16    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 25    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 20    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lijiantao2018114266_16|lijiantao2018114266_08:inst32|TMP2[3] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |lijiantao2018114266_16|lijiantao2018114266_08:inst32|TMP1[3] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lijiantao2018114266_16|lijiantao2018114266_08:inst49|TMP2[0] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |lijiantao2018114266_16|lijiantao2018114266_08:inst49|TMP1[0] ;
+; 8:1                ; 14 bits   ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; No         ; |lijiantao2018114266_16|lijiantao2018114266_14:inst1|TEMP0[2] ;
+; 14:1               ; 7 bits    ; 63 LEs        ; 56 LEs               ; 7 LEs                  ; No         ; |lijiantao2018114266_16|lijiantao2018114266_17:inst6|Mux4     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 127                         ;
+;     CLR               ; 16                          ;
+;     ENA               ; 11                          ;
+;     ENA CLR           ; 9                           ;
+;     SCLR              ; 16                          ;
+;     plain             ; 75                          ;
+; arriav_lcell_comb     ; 448                         ;
+;     arith             ; 16                          ;
+;         1 data inputs ; 16                          ;
+;     extend            ; 22                          ;
+;         7 data inputs ; 22                          ;
+;     normal            ; 410                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 24                          ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 100                         ;
+;         4 data inputs ; 151                         ;
+;         5 data inputs ; 60                          ;
+;         6 data inputs ; 61                          ;
+; boundary_port         ; 25                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 2.51                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Fri Sep 04 20:19:48 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lijiantao2018114266_16 -c lijiantao2018114266_16
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_17/lijiantao2018114266_17.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_17-RTL File: D:/Desktop/wo/lijiantao2018114266_17/lijiantao2018114266_17.vhd Line: 18
+    Info (12023): Found entity 1: lijiantao2018114266_17 File: D:/Desktop/wo/lijiantao2018114266_17/lijiantao2018114266_17.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_01/lijiantao2018114266_01.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_01-SHIWANFENPIN File: D:/Desktop/wo/lijiantao2018114266_01/lijiantao2018114266_01.vhd Line: 14
+    Info (12023): Found entity 1: lijiantao2018114266_01 File: D:/Desktop/wo/lijiantao2018114266_01/lijiantao2018114266_01.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_02/lijiantao2018114266_02.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_02-CLK500TO100HZ File: D:/Desktop/wo/lijiantao2018114266_02/lijiantao2018114266_02.vhd Line: 16
+    Info (12023): Found entity 1: lijiantao2018114266_02 File: D:/Desktop/wo/lijiantao2018114266_02/lijiantao2018114266_02.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_03/lijiantao2018114266_03.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_03-CLK100TO4HZ File: D:/Desktop/wo/lijiantao2018114266_03/lijiantao2018114266_03.vhd Line: 16
+    Info (12023): Found entity 1: lijiantao2018114266_03 File: D:/Desktop/wo/lijiantao2018114266_03/lijiantao2018114266_03.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_04/lijiantao2018114266_04.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_04-CLK4HZTO2HZ File: D:/Desktop/wo/lijiantao2018114266_04/lijiantao2018114266_04.vhd Line: 17
+    Info (12023): Found entity 1: lijiantao2018114266_04 File: D:/Desktop/wo/lijiantao2018114266_04/lijiantao2018114266_04.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_05-A File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 14
+    Info (12023): Found entity 1: lijiantao2018114266_05 File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_06/lijiantao2018114266_06.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_06-A File: D:/Desktop/wo/lijiantao2018114266_06/lijiantao2018114266_06.vhd Line: 16
+    Info (12023): Found entity 1: lijiantao2018114266_06 File: D:/Desktop/wo/lijiantao2018114266_06/lijiantao2018114266_06.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_07/lijiantao2018114266_07.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_07-RTL File: D:/Desktop/wo/lijiantao2018114266_07/lijiantao2018114266_07.vhd Line: 16
+    Info (12023): Found entity 1: lijiantao2018114266_07 File: D:/Desktop/wo/lijiantao2018114266_07/lijiantao2018114266_07.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_08/lijiantao2018114266_08.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_08-RTL File: D:/Desktop/wo/lijiantao2018114266_08/lijiantao2018114266_08.vhd Line: 15
+    Info (12023): Found entity 1: lijiantao2018114266_08 File: D:/Desktop/wo/lijiantao2018114266_08/lijiantao2018114266_08.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_09/lijiantao2018114266_09.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_09-RTL File: D:/Desktop/wo/lijiantao2018114266_09/lijiantao2018114266_09.vhd Line: 15
+    Info (12023): Found entity 1: lijiantao2018114266_09 File: D:/Desktop/wo/lijiantao2018114266_09/lijiantao2018114266_09.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_10-RTL File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 21
+    Info (12023): Found entity 1: lijiantao2018114266_10 File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_11/lijiantao2018114266_11.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_11-A File: D:/Desktop/wo/lijiantao2018114266_11/lijiantao2018114266_11.vhd Line: 17
+    Info (12023): Found entity 1: lijiantao2018114266_11 File: D:/Desktop/wo/lijiantao2018114266_11/lijiantao2018114266_11.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_12-A File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 18
+    Info (12023): Found entity 1: lijiantao2018114266_12 File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_13-A File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 18
+    Info (12023): Found entity 1: lijiantao2018114266_13 File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_14-A File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 23
+    Info (12023): Found entity 1: lijiantao2018114266_14 File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file /desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd
+    Info (12022): Found design unit 1: lijiantao2018114266_15-RTL File: D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd Line: 16
+    Info (12023): Found entity 1: lijiantao2018114266_15 File: D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file lijiantao2018114266_16.bdf
+    Info (12023): Found entity 1: lijiantao2018114266_16
+Info (12127): Elaborating entity "lijiantao2018114266_16" for the top level hierarchy
+Info (12128): Elaborating entity "lijiantao2018114266_11" for hierarchy "lijiantao2018114266_11:inst35"
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_11.vhd(24): signal "CLK" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_11/lijiantao2018114266_11.vhd Line: 24
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_11.vhd(24): signal "NZTZANJ" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_11/lijiantao2018114266_11.vhd Line: 24
+Info (12128): Elaborating entity "lijiantao2018114266_04" for hierarchy "lijiantao2018114266_04:inst4"
+Info (12128): Elaborating entity "lijiantao2018114266_03" for hierarchy "lijiantao2018114266_03:inst3"
+Info (12128): Elaborating entity "lijiantao2018114266_02" for hierarchy "lijiantao2018114266_02:inst"
+Info (12128): Elaborating entity "lijiantao2018114266_01" for hierarchy "lijiantao2018114266_01:inst2"
+Info (12128): Elaborating entity "lijiantao2018114266_07" for hierarchy "lijiantao2018114266_07:inst31"
+Info (12128): Elaborating entity "lijiantao2018114266_10" for hierarchy "lijiantao2018114266_10:inst34"
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(27): signal "CLK_MIAO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(27): signal "CLK_FEN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(30): signal "CLK_MIAO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(30): signal "ACLK" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(30): signal "CLK_FEN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(34): signal "CLK_MIAO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 34
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(34): signal "CLK_FEN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 34
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(34): signal "ACLK" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 34
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(38): signal "CLK_MIAO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 38
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(38): signal "CLK_FEN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 38
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(38): signal "ACLK" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 38
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(42): signal "CLK_MIAO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(42): signal "CLK_FEN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(42): signal "ACLK" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(46): signal "CLK_MIAO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 46
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_10.vhd(46): signal "CLK_FEN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 46
+Info (12128): Elaborating entity "lijiantao2018114266_05" for hierarchy "lijiantao2018114266_05:inst29"
+Info (12128): Elaborating entity "lijiantao2018114266_08" for hierarchy "lijiantao2018114266_08:inst49"
+Info (12128): Elaborating entity "lijiantao2018114266_17" for hierarchy "lijiantao2018114266_17:inst6"
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_17.vhd(23): signal "MIAOGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_17/lijiantao2018114266_17.vhd Line: 23
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_17.vhd(25): signal "MIAOSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_17/lijiantao2018114266_17.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_17.vhd(27): signal "FENGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_17/lijiantao2018114266_17.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_17.vhd(29): signal "FENSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_17/lijiantao2018114266_17.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_17.vhd(31): signal "SHIGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_17/lijiantao2018114266_17.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_17.vhd(33): signal "SHISHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_17/lijiantao2018114266_17.vhd Line: 33
+Info (12128): Elaborating entity "lijiantao2018114266_15" for hierarchy "lijiantao2018114266_15:inst39"
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_15.vhd(21): signal "XH_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd Line: 21
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_15.vhd(21): signal "XH_4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd Line: 21
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_15.vhd(21): signal "XH_3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd Line: 21
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_15.vhd(21): signal "XH_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd Line: 21
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_15.vhd(21): signal "XH_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd Line: 21
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_15.vhd(21): signal "XH_0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd Line: 21
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_15.vhd(23): signal "DIANLU_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd Line: 23
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_15.vhd(23): signal "DIANLU_4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd Line: 23
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_15.vhd(23): signal "DIANLU_3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd Line: 23
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_15.vhd(23): signal "DIANLU_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd Line: 23
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_15.vhd(23): signal "DIANLU_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd Line: 23
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_15.vhd(23): signal "DIANLU_0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_15/lijiantao2018114266_15.vhd Line: 23
+Info (12128): Elaborating entity "lijiantao2018114266_14" for hierarchy "lijiantao2018114266_14:inst1"
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(36): signal "SZFGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 36
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(36): signal "SZFSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 36
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(42): signal "SZSGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(42): signal "SZSSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(48): signal "NZFGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(48): signal "NZFSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(54): signal "NZSGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 54
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(54): signal "NZSSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 54
+Warning (10631): VHDL Process Statement warning at lijiantao2018114266_14.vhd(30): inferring latch(es) for signal or variable "TEMP0", which holds its previous value in one or more paths through the process File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Warning (10631): VHDL Process Statement warning at lijiantao2018114266_14.vhd(30): inferring latch(es) for signal or variable "TEMP1", which holds its previous value in one or more paths through the process File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(64): signal "SZSSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 64
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(64): signal "SZSGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 64
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(64): signal "SZFSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 64
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(64): signal "SZFGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 64
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(64): signal "SZMSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 64
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(64): signal "SZMGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 64
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(66): signal "SZSSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(66): signal "SZSGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(66): signal "TEMP1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(66): signal "TEMP0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(66): signal "SZMSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(66): signal "SZMGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(68): signal "TEMP1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 68
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(68): signal "TEMP0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 68
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(68): signal "SZFSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 68
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(68): signal "SZFGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 68
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(68): signal "SZMSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 68
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(68): signal "SZMGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 68
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(70): signal "NZSSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 70
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(70): signal "NZSGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 70
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(70): signal "TEMP1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 70
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(70): signal "TEMP0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 70
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(72): signal "TEMP1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 72
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(72): signal "TEMP0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 72
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(72): signal "NZFSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 72
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(72): signal "NZFGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 72
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(74): signal "MBFSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(74): signal "MBFGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(74): signal "MBMSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(74): signal "MBMGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(74): signal "MBBSHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_14.vhd(74): signal "MBBGE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 74
+Warning (10631): VHDL Process Statement warning at lijiantao2018114266_14.vhd(61): inferring latch(es) for signal or variable "TMP5", which holds its previous value in one or more paths through the process File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at lijiantao2018114266_14.vhd(61): inferring latch(es) for signal or variable "TMP4", which holds its previous value in one or more paths through the process File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at lijiantao2018114266_14.vhd(61): inferring latch(es) for signal or variable "TMP3", which holds its previous value in one or more paths through the process File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at lijiantao2018114266_14.vhd(61): inferring latch(es) for signal or variable "TMP2", which holds its previous value in one or more paths through the process File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at lijiantao2018114266_14.vhd(61): inferring latch(es) for signal or variable "TMP1", which holds its previous value in one or more paths through the process File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at lijiantao2018114266_14.vhd(61): inferring latch(es) for signal or variable "TMP0", which holds its previous value in one or more paths through the process File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at lijiantao2018114266_14.vhd(61): inferring latch(es) for signal or variable "LED", which holds its previous value in one or more paths through the process File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "LED[0]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "LED[1]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "LED[2]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "LED[3]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP0[0]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP0[1]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP0[2]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP0[3]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP0[4]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP0[5]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP0[6]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP1[0]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP1[1]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP1[2]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP1[3]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP1[4]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP1[5]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP1[6]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP2[0]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP2[1]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP2[2]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP2[3]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP2[4]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP2[5]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP2[6]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP3[0]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP3[1]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP3[2]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP3[3]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP3[4]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP3[5]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP3[6]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP4[0]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP4[1]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP4[2]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP4[3]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP4[4]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP4[5]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP4[6]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP5[0]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP5[1]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP5[2]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP5[3]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP5[4]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP5[5]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TMP5[6]" at lijiantao2018114266_14.vhd(61) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+Info (10041): Inferred latch for "TEMP1[0]" at lijiantao2018114266_14.vhd(30) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Info (10041): Inferred latch for "TEMP1[1]" at lijiantao2018114266_14.vhd(30) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Info (10041): Inferred latch for "TEMP1[2]" at lijiantao2018114266_14.vhd(30) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Info (10041): Inferred latch for "TEMP1[3]" at lijiantao2018114266_14.vhd(30) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Info (10041): Inferred latch for "TEMP1[4]" at lijiantao2018114266_14.vhd(30) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Info (10041): Inferred latch for "TEMP1[5]" at lijiantao2018114266_14.vhd(30) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Info (10041): Inferred latch for "TEMP1[6]" at lijiantao2018114266_14.vhd(30) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Info (10041): Inferred latch for "TEMP0[0]" at lijiantao2018114266_14.vhd(30) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Info (10041): Inferred latch for "TEMP0[1]" at lijiantao2018114266_14.vhd(30) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Info (10041): Inferred latch for "TEMP0[2]" at lijiantao2018114266_14.vhd(30) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Info (10041): Inferred latch for "TEMP0[3]" at lijiantao2018114266_14.vhd(30) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Info (10041): Inferred latch for "TEMP0[4]" at lijiantao2018114266_14.vhd(30) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Info (10041): Inferred latch for "TEMP0[5]" at lijiantao2018114266_14.vhd(30) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Info (10041): Inferred latch for "TEMP0[6]" at lijiantao2018114266_14.vhd(30) File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+Info (12128): Elaborating entity "lijiantao2018114266_12" for hierarchy "lijiantao2018114266_12:inst51"
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(27): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(33): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(35): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 35
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(37): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 37
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(39): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 39
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(41): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(43): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(45): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 45
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(47): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 47
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(49): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(51): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 51
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(53): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(55): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 55
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(57): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 57
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(59): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 59
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_12.vhd(61): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at lijiantao2018114266_12.vhd(21): inferring latch(es) for signal or variable "TEMP", which holds its previous value in one or more paths through the process File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Info (10041): Inferred latch for "TEMP[0]" at lijiantao2018114266_12.vhd(21) File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Info (10041): Inferred latch for "TEMP[1]" at lijiantao2018114266_12.vhd(21) File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Info (10041): Inferred latch for "TEMP[2]" at lijiantao2018114266_12.vhd(21) File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Info (10041): Inferred latch for "TEMP[3]" at lijiantao2018114266_12.vhd(21) File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Info (10041): Inferred latch for "TEMP[4]" at lijiantao2018114266_12.vhd(21) File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Info (10041): Inferred latch for "TEMP[5]" at lijiantao2018114266_12.vhd(21) File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Info (10041): Inferred latch for "TEMP[6]" at lijiantao2018114266_12.vhd(21) File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Info (12128): Elaborating entity "lijiantao2018114266_09" for hierarchy "lijiantao2018114266_09:inst33"
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_09.vhd(33): signal "CLK" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_09/lijiantao2018114266_09.vhd Line: 33
+Warning (10631): VHDL Process Statement warning at lijiantao2018114266_09.vhd(29): inferring latch(es) for signal or variable "CLK_100", which holds its previous value in one or more paths through the process File: D:/Desktop/wo/lijiantao2018114266_09/lijiantao2018114266_09.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_09.vhd(51): signal "CLRSTATE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_09/lijiantao2018114266_09.vhd Line: 51
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_09.vhd(71): signal "CLRSTATE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_09/lijiantao2018114266_09.vhd Line: 71
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_09.vhd(91): signal "CLRSTATE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_09/lijiantao2018114266_09.vhd Line: 91
+Info (10041): Inferred latch for "CLK_100" at lijiantao2018114266_09.vhd(29) File: D:/Desktop/wo/lijiantao2018114266_09/lijiantao2018114266_09.vhd Line: 29
+Info (12128): Elaborating entity "lijiantao2018114266_06" for hierarchy "lijiantao2018114266_06:inst57"
+Info (12128): Elaborating entity "lijiantao2018114266_13" for hierarchy "lijiantao2018114266_13:inst47"
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(29): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(35): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 35
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(37): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 37
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(39): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 39
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(41): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(43): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(45): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 45
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(47): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 47
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(49): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(51): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 51
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(53): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(55): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 55
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(57): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 57
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(59): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 59
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(61): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 61
+Warning (10492): VHDL Process Statement warning at lijiantao2018114266_13.vhd(63): signal "TMP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 63
+Warning (10631): VHDL Process Statement warning at lijiantao2018114266_13.vhd(23): inferring latch(es) for signal or variable "TEMP", which holds its previous value in one or more paths through the process File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 23
+Info (10041): Inferred latch for "TEMP[0]" at lijiantao2018114266_13.vhd(23) File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 23
+Info (10041): Inferred latch for "TEMP[1]" at lijiantao2018114266_13.vhd(23) File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 23
+Info (10041): Inferred latch for "TEMP[2]" at lijiantao2018114266_13.vhd(23) File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 23
+Info (10041): Inferred latch for "TEMP[3]" at lijiantao2018114266_13.vhd(23) File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 23
+Info (10041): Inferred latch for "TEMP[4]" at lijiantao2018114266_13.vhd(23) File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 23
+Info (10041): Inferred latch for "TEMP[5]" at lijiantao2018114266_13.vhd(23) File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 23
+Info (10041): Inferred latch for "TEMP[6]" at lijiantao2018114266_13.vhd(23) File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 23
+Warning (14025): LATCH primitive "lijiantao2018114266_13:inst42|TEMP[0]" is permanently disabled File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 23
+Warning (14025): LATCH primitive "lijiantao2018114266_13:inst43|TEMP[0]" is permanently disabled File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 23
+Warning (14025): LATCH primitive "lijiantao2018114266_13:inst46|TEMP[0]" is permanently disabled File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 23
+Warning (14025): LATCH primitive "lijiantao2018114266_13:inst47|TEMP[0]" is permanently disabled File: D:/Desktop/wo/lijiantao2018114266_13/lijiantao2018114266_13.vhd Line: 23
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer lijiantao2018114266_10:inst34|SHI_RCLK File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 18
+    Warning (19017): Found clock multiplexer lijiantao2018114266_10:inst34|SHI_RCLK~0 File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 18
+    Warning (19017): Found clock multiplexer lijiantao2018114266_10:inst34|SHI_RCLK~1 File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 18
+    Warning (19017): Found clock multiplexer lijiantao2018114266_10:inst34|FEN_RCLK File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 18
+    Warning (19017): Found clock multiplexer lijiantao2018114266_10:inst34|FEN_RCLK~0 File: D:/Desktop/wo/lijiantao2018114266_10/lijiantao2018114266_10.vhd Line: 18
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst51|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst54|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst50|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst53|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst52|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst63|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst36|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst61|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst64|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst62|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst59|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst65|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst60|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst55|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst66|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst56|TEMP[6]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst51|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst54|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst50|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst53|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst52|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst63|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst36|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst61|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst64|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst62|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst59|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst65|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst60|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst55|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst66|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst56|TEMP[5]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst51|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst54|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst50|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst53|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst52|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst63|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst36|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst61|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst64|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst62|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst59|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst65|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst60|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst55|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst66|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst56|TEMP[4]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst51|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst54|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst50|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst53|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst52|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst63|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst36|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst61|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst64|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst62|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst59|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst65|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst60|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst55|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst66|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst56|TEMP[3]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst51|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst54|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst50|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst53|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst52|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst63|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst36|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst61|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst64|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst62|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst59|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst65|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst60|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst55|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst66|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst56|TEMP[2]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst51|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst54|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst50|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst53|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst52|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst63|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst36|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst61|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst64|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst62|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst59|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst65|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst60|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst55|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst66|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (14026): LATCH primitive "lijiantao2018114266_12:inst56|TEMP[1]" is permanently enabled File: D:/Desktop/wo/lijiantao2018114266_12/lijiantao2018114266_12.vhd Line: 21
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP0[6] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP4[6] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP5[6] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP3[6] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP2[6] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP1[6] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP0[5] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP4[5] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP5[5] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP3[5] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP2[5] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP1[5] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP0[4] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP4[4] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP5[4] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP3[4] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP2[4] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP1[4] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP0[3] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP4[3] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP5[3] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP3[3] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP2[3] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP1[3] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP0[2] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP4[2] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP5[2] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP3[2] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP2[2] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP1[2] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP0[1] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP4[1] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP5[1] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP3[1] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP2[1] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP1[1] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP0[0] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP4[0] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP5[0] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP1[0] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP2[0] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TMP3[0] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[2] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TEMP0[6] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TEMP1[6] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TEMP0[5] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TEMP1[5] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TEMP0[4] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TEMP1[4] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TEMP0[3] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TEMP1[3] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TEMP0[2] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TEMP1[2] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TEMP0[1] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TEMP1[1] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TEMP0[0] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13012): Latch lijiantao2018114266_14:inst1|TEMP1[0] has unsafe behavior File: D:/Desktop/wo/lijiantao2018114266_14/lijiantao2018114266_14.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal lijiantao2018114266_05:inst29|TMP[1] File: D:/Desktop/wo/lijiantao2018114266_05/lijiantao2018114266_05.vhd Line: 19
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[3]" is stuck at VCC
+    Warning (13410): Pin "LEDR[2]" is stuck at VCC
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 479 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 19 output pins
+    Info (21061): Implemented 454 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 346 warnings
+    Info: Peak virtual memory: 4893 megabytes
+    Info: Processing ended: Fri Sep 04 20:20:06 2020
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:22
+
+

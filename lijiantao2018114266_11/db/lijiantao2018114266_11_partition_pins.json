@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "SOUND",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "NZTZANJ",
+					"strict" : false
+				},
+				{
+					"name" : "SZFSHI[0]",
+					"strict" : false
+				},
+				{
+					"name" : "NZFSHI[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SZFSHI[1]",
+					"strict" : false
+				},
+				{
+					"name" : "NZFSHI[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SZFSHI[2]",
+					"strict" : false
+				},
+				{
+					"name" : "NZFSHI[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SZFSHI[3]",
+					"strict" : false
+				},
+				{
+					"name" : "NZFSHI[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SZFGE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "NZFGE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SZFGE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "NZFGE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SZFGE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "NZFGE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SZFGE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "NZFGE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SZHSHI[0]",
+					"strict" : false
+				},
+				{
+					"name" : "NZHSHI[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SZHSHI[1]",
+					"strict" : false
+				},
+				{
+					"name" : "NZHSHI[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SZHSHI[2]",
+					"strict" : false
+				},
+				{
+					"name" : "NZHSHI[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SZHSHI[3]",
+					"strict" : false
+				},
+				{
+					"name" : "NZHSHI[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SZHGE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "NZHGE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SZHGE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "NZHGE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SZHGE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "NZHGE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SZHGE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "NZHGE[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

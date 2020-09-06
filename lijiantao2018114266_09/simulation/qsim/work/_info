@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Desktop/ele/dianzishixi/lijiantao2018114266_09/simulation/qsim
+vlijiantao2018114266_09
+Z1 !s110 1594210346
+!i10b 1
+!s100 a8`0LDc;C?n0L>3I]PiGn0
+IPLL``0=>=Ion5h:5>44870
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1594210344
+8lijiantao2018114266_09.vo
+Flijiantao2018114266_09.vo
+L0 32
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1594210346.000000
+!s107 lijiantao2018114266_09.vo|
+!s90 -work|work|lijiantao2018114266_09.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vlijiantao2018114266_09_vlg_vec_tst
+R1
+!i10b 1
+!s100 KOMAKUoAcTAZKj0:U7Z960
+IN[2Q3a[0ma^_iBQNZKFjz3
+R2
+R0
+w1594210343
+8lijiantao2018114266_09.vwf.vt
+Flijiantao2018114266_09.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 lijiantao2018114266_09.vwf.vt|
+!s90 -work|work|lijiantao2018114266_09.vwf.vt|
+!i113 1
+R5
+R6

@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "MBHCLK",
+					"strict" : false
+				},
+				{
+					"name" : "MBFCLK",
+					"strict" : false
+				},
+				{
+					"name" : "FEN_RCLK",
+					"strict" : false
+				},
+				{
+					"name" : "SHI_RCLK",
+					"strict" : false
+				},
+				{
+					"name" : "STATE_R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "STATE_R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ACLK",
+					"strict" : false
+				},
+				{
+					"name" : "STATE_R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_MIAO",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_FEN",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

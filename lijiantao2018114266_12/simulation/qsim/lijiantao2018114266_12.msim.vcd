@@ -1,0 +1,182 @@
+$comment
+	File created using the following command:
+		vcd file lijiantao2018114266_12.msim.vcd -direction
+$end
+$date
+	Thu Jul 16 22:59:32 2020
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module lijiantao2018114266_12_vhd_vec_tst $end
+$var wire 1 ! D [3] $end
+$var wire 1 " D [2] $end
+$var wire 1 # D [1] $end
+$var wire 1 $ D [0] $end
+$var wire 1 % TEST $end
+$var wire 1 & XY $end
+$var wire 1 ' Y [6] $end
+$var wire 1 ( Y [5] $end
+$var wire 1 ) Y [4] $end
+$var wire 1 * Y [3] $end
+$var wire 1 + Y [2] $end
+$var wire 1 , Y [1] $end
+$var wire 1 - Y [0] $end
+$var wire 1 . ZXY $end
+
+$scope module i1 $end
+$var wire 1 / gnd $end
+$var wire 1 0 vcc $end
+$var wire 1 1 unknown $end
+$var wire 1 2 devoe $end
+$var wire 1 3 devclrn $end
+$var wire 1 4 devpor $end
+$var wire 1 5 ww_devoe $end
+$var wire 1 6 ww_devclrn $end
+$var wire 1 7 ww_devpor $end
+$var wire 1 8 ww_XY $end
+$var wire 1 9 ww_TEST $end
+$var wire 1 : ww_ZXY $end
+$var wire 1 ; ww_D [3] $end
+$var wire 1 < ww_D [2] $end
+$var wire 1 = ww_D [1] $end
+$var wire 1 > ww_D [0] $end
+$var wire 1 ? ww_Y [6] $end
+$var wire 1 @ ww_Y [5] $end
+$var wire 1 A ww_Y [4] $end
+$var wire 1 B ww_Y [3] $end
+$var wire 1 C ww_Y [2] $end
+$var wire 1 D ww_Y [1] $end
+$var wire 1 E ww_Y [0] $end
+$var wire 1 F \Y[0]~output_o\ $end
+$var wire 1 G \Y[1]~output_o\ $end
+$var wire 1 H \Y[2]~output_o\ $end
+$var wire 1 I \Y[3]~output_o\ $end
+$var wire 1 J \Y[4]~output_o\ $end
+$var wire 1 K \Y[5]~output_o\ $end
+$var wire 1 L \Y[6]~output_o\ $end
+$var wire 1 M \D[0]~input_o\ $end
+$var wire 1 N \D[1]~input_o\ $end
+$var wire 1 O \D[2]~input_o\ $end
+$var wire 1 P \D[3]~input_o\ $end
+$var wire 1 Q \TEST~input_o\ $end
+$var wire 1 R \XY~input_o\ $end
+$var wire 1 S \TEMP[0]~13_combout\ $end
+$var wire 1 T \ZXY~input_o\ $end
+$var wire 1 U \TEMP[1]~0_combout\ $end
+$var wire 1 V \TEMP[1]~1_combout\ $end
+$var wire 1 W \TEMP[2]~2_combout\ $end
+$var wire 1 X \TEMP[2]~3_combout\ $end
+$var wire 1 Y \TEMP[3]~4_combout\ $end
+$var wire 1 Z \TEMP[3]~5_combout\ $end
+$var wire 1 [ \TEMP[4]~6_combout\ $end
+$var wire 1 \ \TEMP[4]~7_combout\ $end
+$var wire 1 ] \TEMP[4]~8_combout\ $end
+$var wire 1 ^ \TEMP[5]~9_combout\ $end
+$var wire 1 _ \TEMP[5]~10_combout\ $end
+$var wire 1 ` \TEMP[6]~11_combout\ $end
+$var wire 1 a \TEMP[6]~12_combout\ $end
+$var wire 1 b \ALT_INV_ZXY~input_o\ $end
+$var wire 1 c \ALT_INV_D[0]~input_o\ $end
+$var wire 1 d \ALT_INV_D[1]~input_o\ $end
+$var wire 1 e \ALT_INV_D[2]~input_o\ $end
+$var wire 1 f \ALT_INV_D[3]~input_o\ $end
+$var wire 1 g \ALT_INV_TEST~input_o\ $end
+$var wire 1 h \ALT_INV_XY~input_o\ $end
+$var wire 1 i \ALT_INV_TEMP[6]~11_combout\ $end
+$var wire 1 j \ALT_INV_TEMP[5]~9_combout\ $end
+$var wire 1 k \ALT_INV_TEMP[4]~7_combout\ $end
+$var wire 1 l \ALT_INV_TEMP[4]~6_combout\ $end
+$var wire 1 m \ALT_INV_TEMP[3]~4_combout\ $end
+$var wire 1 n \ALT_INV_TEMP[2]~2_combout\ $end
+$var wire 1 o \ALT_INV_TEMP[1]~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1%
+1&
+1.
+0/
+10
+x1
+12
+13
+14
+15
+16
+17
+18
+19
+1:
+0F
+0G
+1H
+1I
+0J
+0K
+1L
+0M
+0N
+1O
+0P
+1Q
+1R
+0S
+1T
+0U
+0V
+0W
+1X
+1Y
+1Z
+0[
+1\
+0]
+0^
+0_
+0`
+1a
+0b
+1c
+1d
+0e
+1f
+0g
+0h
+1i
+1j
+0k
+1l
+0m
+1n
+1o
+0!
+1"
+0#
+0$
+0;
+1<
+0=
+0>
+1?
+0@
+0A
+1B
+1C
+0D
+0E
+1'
+0(
+0)
+1*
+1+
+0,
+0-
+$end
+#1000000

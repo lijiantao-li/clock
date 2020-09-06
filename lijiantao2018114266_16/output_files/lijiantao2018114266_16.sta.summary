@@ -1,0 +1,709 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'lijiantao2018114266_05:inst29|TMP[1]'
+Slack : -7.316
+TNS   : -510.599
+
+Type  : Slow 1100mV 85C Model Setup 'lijiantao2018114266_05:inst29|TMP[0]'
+Slack : -7.283
+TNS   : -324.823
+
+Type  : Slow 1100mV 85C Model Setup 'lijiantao2018114266_03:inst3|TMP1'
+Slack : -6.602
+TNS   : -193.433
+
+Type  : Slow 1100mV 85C Model Setup 'CLK_50MHZ'
+Slack : -3.716
+TNS   : -51.102
+
+Type  : Slow 1100mV 85C Model Setup 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : -2.950
+TNS   : -16.274
+
+Type  : Slow 1100mV 85C Model Setup 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : -2.897
+TNS   : -23.381
+
+Type  : Slow 1100mV 85C Model Setup 'lijiantao2018114266_02:inst|TMP1'
+Slack : -2.697
+TNS   : -31.125
+
+Type  : Slow 1100mV 85C Model Setup 'inst19'
+Slack : -2.344
+TNS   : -2.344
+
+Type  : Slow 1100mV 85C Model Setup 'lijiantao2018114266_04:inst4|TMP[1]'
+Slack : -2.013
+TNS   : -23.570
+
+Type  : Slow 1100mV 85C Model Setup 'inst10'
+Slack : -1.985
+TNS   : -5.205
+
+Type  : Slow 1100mV 85C Model Setup 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : -1.888
+TNS   : -18.293
+
+Type  : Slow 1100mV 85C Model Setup 'lijiantao2018114266_01:inst2|TMP'
+Slack : -1.789
+TNS   : -19.066
+
+Type  : Slow 1100mV 85C Model Hold 'lijiantao2018114266_03:inst3|TMP1'
+Slack : -1.213
+TNS   : -4.762
+
+Type  : Slow 1100mV 85C Model Hold 'lijiantao2018114266_05:inst29|TMP[1]'
+Slack : -1.207
+TNS   : -4.870
+
+Type  : Slow 1100mV 85C Model Hold 'lijiantao2018114266_05:inst29|TMP[0]'
+Slack : -1.116
+TNS   : -4.873
+
+Type  : Slow 1100mV 85C Model Hold 'lijiantao2018114266_02:inst|TMP1'
+Slack : -0.922
+TNS   : -0.922
+
+Type  : Slow 1100mV 85C Model Hold 'inst10'
+Slack : 0.102
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'lijiantao2018114266_01:inst2|TMP'
+Slack : 0.310
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CLK_50MHZ'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : 0.588
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'lijiantao2018114266_04:inst4|TMP[1]'
+Slack : 0.661
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : 0.770
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : 0.877
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'inst19'
+Slack : 1.071
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : -3.338
+TNS   : -39.337
+
+Type  : Slow 1100mV 85C Model Recovery 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : -3.041
+TNS   : -42.213
+
+Type  : Slow 1100mV 85C Model Recovery 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : -2.860
+TNS   : -27.536
+
+Type  : Slow 1100mV 85C Model Recovery 'inst19'
+Slack : -1.710
+TNS   : -1.710
+
+Type  : Slow 1100mV 85C Model Removal 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : 0.620
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : 0.821
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : 0.847
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'inst19'
+Slack : 0.943
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_05:inst29|TMP[0]'
+Slack : -1.034
+TNS   : -84.893
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_05:inst29|TMP[1]'
+Slack : -0.705
+TNS   : -48.616
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLK_50MHZ'
+Slack : -0.405
+TNS   : -14.257
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_03:inst3|TMP1'
+Slack : -0.394
+TNS   : -28.262
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_02:inst|TMP1'
+Slack : -0.394
+TNS   : -14.673
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_01:inst2|TMP'
+Slack : -0.394
+TNS   : -8.392
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : -0.394
+TNS   : -8.085
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_04:inst4|TMP[1]'
+Slack : -0.394
+TNS   : -7.574
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : -0.394
+TNS   : -7.299
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : -0.394
+TNS   : -7.166
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'inst10'
+Slack : -0.394
+TNS   : -1.788
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'inst19'
+Slack : -0.394
+TNS   : -1.091
+
+Type  : Slow 1100mV 0C Model Setup 'lijiantao2018114266_05:inst29|TMP[1]'
+Slack : -7.141
+TNS   : -502.101
+
+Type  : Slow 1100mV 0C Model Setup 'lijiantao2018114266_05:inst29|TMP[0]'
+Slack : -7.108
+TNS   : -318.006
+
+Type  : Slow 1100mV 0C Model Setup 'lijiantao2018114266_03:inst3|TMP1'
+Slack : -6.378
+TNS   : -187.011
+
+Type  : Slow 1100mV 0C Model Setup 'CLK_50MHZ'
+Slack : -3.893
+TNS   : -50.916
+
+Type  : Slow 1100mV 0C Model Setup 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : -2.853
+TNS   : -16.166
+
+Type  : Slow 1100mV 0C Model Setup 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : -2.792
+TNS   : -22.644
+
+Type  : Slow 1100mV 0C Model Setup 'lijiantao2018114266_02:inst|TMP1'
+Slack : -2.720
+TNS   : -30.649
+
+Type  : Slow 1100mV 0C Model Setup 'inst19'
+Slack : -2.350
+TNS   : -2.350
+
+Type  : Slow 1100mV 0C Model Setup 'lijiantao2018114266_04:inst4|TMP[1]'
+Slack : -1.997
+TNS   : -22.731
+
+Type  : Slow 1100mV 0C Model Setup 'inst10'
+Slack : -1.976
+TNS   : -5.178
+
+Type  : Slow 1100mV 0C Model Setup 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : -1.831
+TNS   : -17.610
+
+Type  : Slow 1100mV 0C Model Setup 'lijiantao2018114266_01:inst2|TMP'
+Slack : -1.751
+TNS   : -18.923
+
+Type  : Slow 1100mV 0C Model Hold 'lijiantao2018114266_03:inst3|TMP1'
+Slack : -1.195
+TNS   : -5.016
+
+Type  : Slow 1100mV 0C Model Hold 'lijiantao2018114266_05:inst29|TMP[1]'
+Slack : -1.156
+TNS   : -4.814
+
+Type  : Slow 1100mV 0C Model Hold 'lijiantao2018114266_05:inst29|TMP[0]'
+Slack : -1.044
+TNS   : -4.656
+
+Type  : Slow 1100mV 0C Model Hold 'lijiantao2018114266_02:inst|TMP1'
+Slack : -0.857
+TNS   : -0.857
+
+Type  : Slow 1100mV 0C Model Hold 'inst10'
+Slack : 0.029
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'lijiantao2018114266_01:inst2|TMP'
+Slack : 0.294
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLK_50MHZ'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : 0.565
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'lijiantao2018114266_04:inst4|TMP[1]'
+Slack : 0.643
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : 0.691
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : 0.869
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'inst19'
+Slack : 1.041
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : -3.251
+TNS   : -38.408
+
+Type  : Slow 1100mV 0C Model Recovery 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : -2.973
+TNS   : -41.253
+
+Type  : Slow 1100mV 0C Model Recovery 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : -2.785
+TNS   : -26.981
+
+Type  : Slow 1100mV 0C Model Recovery 'inst19'
+Slack : -1.651
+TNS   : -1.651
+
+Type  : Slow 1100mV 0C Model Removal 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : 0.584
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : 0.744
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : 0.784
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'inst19'
+Slack : 0.871
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_05:inst29|TMP[0]'
+Slack : -0.969
+TNS   : -78.277
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_05:inst29|TMP[1]'
+Slack : -0.687
+TNS   : -47.120
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLK_50MHZ'
+Slack : -0.413
+TNS   : -15.318
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_03:inst3|TMP1'
+Slack : -0.394
+TNS   : -27.131
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_02:inst|TMP1'
+Slack : -0.394
+TNS   : -13.894
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_01:inst2|TMP'
+Slack : -0.394
+TNS   : -8.115
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : -0.394
+TNS   : -8.033
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_04:inst4|TMP[1]'
+Slack : -0.394
+TNS   : -7.359
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : -0.394
+TNS   : -7.154
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : -0.394
+TNS   : -7.017
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'inst10'
+Slack : -0.394
+TNS   : -1.779
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'inst19'
+Slack : -0.394
+TNS   : -1.077
+
+Type  : Fast 1100mV 85C Model Setup 'lijiantao2018114266_05:inst29|TMP[0]'
+Slack : -4.855
+TNS   : -191.964
+
+Type  : Fast 1100mV 85C Model Setup 'lijiantao2018114266_05:inst29|TMP[1]'
+Slack : -4.762
+TNS   : -300.197
+
+Type  : Fast 1100mV 85C Model Setup 'lijiantao2018114266_03:inst3|TMP1'
+Slack : -4.537
+TNS   : -124.410
+
+Type  : Fast 1100mV 85C Model Setup 'CLK_50MHZ'
+Slack : -2.911
+TNS   : -19.023
+
+Type  : Fast 1100mV 85C Model Setup 'lijiantao2018114266_02:inst|TMP1'
+Slack : -1.778
+TNS   : -13.092
+
+Type  : Fast 1100mV 85C Model Setup 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : -1.335
+TNS   : -5.845
+
+Type  : Fast 1100mV 85C Model Setup 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : -1.324
+TNS   : -9.386
+
+Type  : Fast 1100mV 85C Model Setup 'inst10'
+Slack : -1.188
+TNS   : -3.307
+
+Type  : Fast 1100mV 85C Model Setup 'lijiantao2018114266_01:inst2|TMP'
+Slack : -1.110
+TNS   : -6.940
+
+Type  : Fast 1100mV 85C Model Setup 'inst19'
+Slack : -1.099
+TNS   : -1.099
+
+Type  : Fast 1100mV 85C Model Setup 'lijiantao2018114266_04:inst4|TMP[1]'
+Slack : -0.939
+TNS   : -10.605
+
+Type  : Fast 1100mV 85C Model Setup 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : -0.862
+TNS   : -7.447
+
+Type  : Fast 1100mV 85C Model Hold 'lijiantao2018114266_05:inst29|TMP[0]'
+Slack : -1.053
+TNS   : -6.467
+
+Type  : Fast 1100mV 85C Model Hold 'lijiantao2018114266_05:inst29|TMP[1]'
+Slack : -0.981
+TNS   : -7.754
+
+Type  : Fast 1100mV 85C Model Hold 'lijiantao2018114266_03:inst3|TMP1'
+Slack : -0.850
+TNS   : -3.847
+
+Type  : Fast 1100mV 85C Model Hold 'lijiantao2018114266_02:inst|TMP1'
+Slack : -0.650
+TNS   : -0.650
+
+Type  : Fast 1100mV 85C Model Hold 'inst10'
+Slack : -0.009
+TNS   : -0.009
+
+Type  : Fast 1100mV 85C Model Hold 'lijiantao2018114266_01:inst2|TMP'
+Slack : 0.050
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLK_50MHZ'
+Slack : 0.204
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : 0.273
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'lijiantao2018114266_04:inst4|TMP[1]'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : 0.439
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'inst19'
+Slack : 0.446
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : -1.730
+TNS   : -20.245
+
+Type  : Fast 1100mV 85C Model Recovery 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : -1.468
+TNS   : -20.486
+
+Type  : Fast 1100mV 85C Model Recovery 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : -1.355
+TNS   : -12.887
+
+Type  : Fast 1100mV 85C Model Recovery 'inst19'
+Slack : -0.917
+TNS   : -0.917
+
+Type  : Fast 1100mV 85C Model Removal 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : 0.223
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : 0.235
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'inst19'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_05:inst29|TMP[0]'
+Slack : -0.551
+TNS   : -22.177
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLK_50MHZ'
+Slack : -0.408
+TNS   : -2.803
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_05:inst29|TMP[1]'
+Slack : -0.235
+TNS   : -2.682
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : -0.091
+TNS   : -0.543
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : -0.034
+TNS   : -0.165
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_03:inst3|TMP1'
+Slack : -0.032
+TNS   : -0.651
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_04:inst4|TMP[1]'
+Slack : -0.026
+TNS   : -0.026
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : 0.022
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'inst10'
+Slack : 0.036
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_01:inst2|TMP'
+Slack : 0.039
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'inst19'
+Slack : 0.065
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'lijiantao2018114266_02:inst|TMP1'
+Slack : 0.113
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'lijiantao2018114266_05:inst29|TMP[0]'
+Slack : -4.276
+TNS   : -171.410
+
+Type  : Fast 1100mV 0C Model Setup 'lijiantao2018114266_05:inst29|TMP[1]'
+Slack : -4.214
+TNS   : -268.775
+
+Type  : Fast 1100mV 0C Model Setup 'lijiantao2018114266_03:inst3|TMP1'
+Slack : -3.975
+TNS   : -108.764
+
+Type  : Fast 1100mV 0C Model Setup 'CLK_50MHZ'
+Slack : -2.436
+TNS   : -16.172
+
+Type  : Fast 1100mV 0C Model Setup 'lijiantao2018114266_02:inst|TMP1'
+Slack : -1.605
+TNS   : -11.204
+
+Type  : Fast 1100mV 0C Model Setup 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : -1.169
+TNS   : -4.878
+
+Type  : Fast 1100mV 0C Model Setup 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : -1.156
+TNS   : -7.850
+
+Type  : Fast 1100mV 0C Model Setup 'inst10'
+Slack : -1.067
+TNS   : -2.965
+
+Type  : Fast 1100mV 0C Model Setup 'lijiantao2018114266_01:inst2|TMP'
+Slack : -1.008
+TNS   : -5.887
+
+Type  : Fast 1100mV 0C Model Setup 'inst19'
+Slack : -0.979
+TNS   : -0.979
+
+Type  : Fast 1100mV 0C Model Setup 'lijiantao2018114266_04:inst4|TMP[1]'
+Slack : -0.817
+TNS   : -8.937
+
+Type  : Fast 1100mV 0C Model Setup 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : -0.753
+TNS   : -6.273
+
+Type  : Fast 1100mV 0C Model Hold 'lijiantao2018114266_05:inst29|TMP[0]'
+Slack : -0.939
+TNS   : -5.904
+
+Type  : Fast 1100mV 0C Model Hold 'lijiantao2018114266_05:inst29|TMP[1]'
+Slack : -0.901
+TNS   : -8.059
+
+Type  : Fast 1100mV 0C Model Hold 'lijiantao2018114266_03:inst3|TMP1'
+Slack : -0.818
+TNS   : -4.038
+
+Type  : Fast 1100mV 0C Model Hold 'lijiantao2018114266_02:inst|TMP1'
+Slack : -0.615
+TNS   : -0.615
+
+Type  : Fast 1100mV 0C Model Hold 'inst10'
+Slack : -0.078
+TNS   : -0.078
+
+Type  : Fast 1100mV 0C Model Hold 'lijiantao2018114266_01:inst2|TMP'
+Slack : -0.008
+TNS   : -0.008
+
+Type  : Fast 1100mV 0C Model Hold 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : 0.057
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLK_50MHZ'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'lijiantao2018114266_04:inst4|TMP[1]'
+Slack : 0.309
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'inst19'
+Slack : 0.375
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : -1.512
+TNS   : -17.706
+
+Type  : Fast 1100mV 0C Model Recovery 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : -1.291
+TNS   : -18.019
+
+Type  : Fast 1100mV 0C Model Recovery 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : -1.175
+TNS   : -11.209
+
+Type  : Fast 1100mV 0C Model Recovery 'inst19'
+Slack : -0.765
+TNS   : -0.765
+
+Type  : Fast 1100mV 0C Model Removal 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : 0.079
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : 0.165
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'inst19'
+Slack : 0.276
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_05:inst29|TMP[0]'
+Slack : -0.446
+TNS   : -16.070
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLK_50MHZ'
+Slack : -0.409
+TNS   : -2.745
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_05:inst29|TMP[1]'
+Slack : -0.169
+TNS   : -1.835
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_09:inst33|CLK_100'
+Slack : -0.040
+TNS   : -0.237
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_09:inst33|CLK_F'
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_03:inst3|TMP1'
+Slack : 0.016
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_04:inst4|TMP[1]'
+Slack : 0.018
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_01:inst2|TMP'
+Slack : 0.046
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_09:inst33|CLK_M'
+Slack : 0.050
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'inst10'
+Slack : 0.057
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'inst19'
+Slack : 0.076
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'lijiantao2018114266_02:inst|TMP1'
+Slack : 0.126
+TNS   : 0.000
+
+------------------------------------------------------------

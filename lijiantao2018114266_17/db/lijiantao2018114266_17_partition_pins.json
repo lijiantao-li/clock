@@ -1,0 +1,241 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "XSSHUCHU[0]",
+					"strict" : false
+				},
+				{
+					"name" : "XSSHUCHU[1]",
+					"strict" : false
+				},
+				{
+					"name" : "XSSHUCHU[2]",
+					"strict" : false
+				},
+				{
+					"name" : "XSSHUCHU[3]",
+					"strict" : false
+				},
+				{
+					"name" : "XSSHUCHU[4]",
+					"strict" : false
+				},
+				{
+					"name" : "XSSHUCHU[5]",
+					"strict" : false
+				},
+				{
+					"name" : "XSSHUCHU[6]",
+					"strict" : false
+				},
+				{
+					"name" : "WEIXUAN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "WEIXUAN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "WEIXUAN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "WEIXUAN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "WEIXUAN[4]",
+					"strict" : false
+				},
+				{
+					"name" : "WEIXUAN[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SHIGE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "STATEIN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "STATEIN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "STATEIN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SHISHI[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MIAOGE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MIAOSHI[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FENGE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FENSHI[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SHIGE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SHISHI[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MIAOGE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MIAOSHI[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FENGE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FENSHI[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SHIGE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SHISHI[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MIAOGE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MIAOSHI[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FENGE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FENSHI[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SHIGE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SHISHI[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MIAOGE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MIAOSHI[3]",
+					"strict" : false
+				},
+				{
+					"name" : "FENGE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "FENSHI[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SHIGE[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SHISHI[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MIAOGE[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MIAOSHI[4]",
+					"strict" : false
+				},
+				{
+					"name" : "FENGE[4]",
+					"strict" : false
+				},
+				{
+					"name" : "FENSHI[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SHIGE[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SHISHI[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MIAOGE[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MIAOSHI[5]",
+					"strict" : false
+				},
+				{
+					"name" : "FENGE[5]",
+					"strict" : false
+				},
+				{
+					"name" : "FENSHI[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SHIGE[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SHISHI[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MIAOGE[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MIAOSHI[6]",
+					"strict" : false
+				},
+				{
+					"name" : "FENGE[6]",
+					"strict" : false
+				},
+				{
+					"name" : "FENSHI[6]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

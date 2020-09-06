@@ -1,0 +1,119 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Desktop/ele/dianzishixi/lijiantao2018114266_13/simulation/qsim
+Elijiantao2018114266_13
+Z1 w1594911639
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 cD3@N^MdoDolN5@R6?T[V1
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 3BCIeZzdIHLCX<;R;K38G3
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 PQDYM9fR]Wek<A7X8bA8S1
+Z9 dD:/Desktop/ele/lijiantao2018114266/lijiantao2018114266_13/simulation/qsim
+Z10 8lijiantao2018114266_13.vho
+Z11 Flijiantao2018114266_13.vho
+l0
+L37
+VnU`LD[XYXaMj:3^M:4hPh3
+!s100 a9ba7XmQi1Xf8?7171@an0
+Z12 OV;C;10.5b;63
+32
+Z13 !s110 1594911640
+!i10b 1
+Z14 !s108 1594911640.000000
+Z15 !s90 -work|work|lijiantao2018114266_13.vho|
+Z16 !s107 lijiantao2018114266_13.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 22 lijiantao2018114266_13 0 22 nU`LD[XYXaMj:3^M:4hPh3
+l111
+L50
+VNNKJC5:S:d0FG6c9:2oaV3
+!s100 UjWU4WgTFcEF]KR^MiBH=3
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Elijiantao2018114266_13_vhd_vec_tst
+Z19 w1594911638
+R6
+R7
+R9
+Z20 8lijiantao2018114266_13.vwf.vht
+Z21 Flijiantao2018114266_13.vwf.vht
+l0
+L32
+VG5H?zfcNnfXcUBOiXg:k>3
+!s100 loPRJFNVIdc_5lXX_ECjC0
+R12
+32
+R13
+!i10b 1
+R14
+Z22 !s90 -work|work|lijiantao2018114266_13.vwf.vht|
+Z23 !s107 lijiantao2018114266_13.vwf.vht|
+!i113 1
+R17
+R18
+Alijiantao2018114266_13_arch
+R6
+R7
+DEx4 work 34 lijiantao2018114266_13_vhd_vec_tst 0 22 G5H?zfcNnfXcUBOiXg:k>3
+l57
+L34
+V5Yj?hdU^8eBWkaE1:Vf=B0
+!s100 W1jeHSQdF8>_Dh=aJ_]eE0
+R12
+32
+R13
+!i10b 1
+R14
+R22
+R23
+!i113 1
+R17
+R18
+vlijiantao2018114266_13_vlg_vec_tst
+!s110 1594212192
+!i10b 1
+!s100 FPCI9NKWODjPde6O]O]_`1
+I?[e2[PVHf^=4Zd=jWm^^=1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1594212190
+8lijiantao2018114266_13.vwf.vt
+Flijiantao2018114266_13.vwf.vt
+L0 30
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1594212192.000000
+!s107 lijiantao2018114266_13.vwf.vt|
+!s90 -work|work|lijiantao2018114266_13.vwf.vt|
+!i113 1
+R17
+tCvgOpt 0

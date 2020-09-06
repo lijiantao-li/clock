@@ -1,0 +1,38 @@
+|lijiantao2018114266_11
+CLK => TMP.IN0
+SZFSHI[0] => Equal0.IN3
+SZFSHI[1] => Equal0.IN2
+SZFSHI[2] => Equal0.IN1
+SZFSHI[3] => Equal0.IN0
+SZFGE[0] => Equal1.IN3
+SZFGE[1] => Equal1.IN2
+SZFGE[2] => Equal1.IN1
+SZFGE[3] => Equal1.IN0
+NZFSHI[0] => Equal0.IN7
+NZFSHI[1] => Equal0.IN6
+NZFSHI[2] => Equal0.IN5
+NZFSHI[3] => Equal0.IN4
+NZFGE[0] => Equal1.IN7
+NZFGE[1] => Equal1.IN6
+NZFGE[2] => Equal1.IN5
+NZFGE[3] => Equal1.IN4
+SZHSHI[0] => Equal2.IN3
+SZHSHI[1] => Equal2.IN2
+SZHSHI[2] => Equal2.IN1
+SZHSHI[3] => Equal2.IN0
+SZHGE[0] => Equal3.IN3
+SZHGE[1] => Equal3.IN2
+SZHGE[2] => Equal3.IN1
+SZHGE[3] => Equal3.IN0
+NZHSHI[0] => Equal2.IN7
+NZHSHI[1] => Equal2.IN6
+NZHSHI[2] => Equal2.IN5
+NZHSHI[3] => Equal2.IN4
+NZHGE[0] => Equal3.IN7
+NZHGE[1] => Equal3.IN6
+NZHGE[2] => Equal3.IN5
+NZHGE[3] => Equal3.IN4
+NZTZANJ => TMP.IN1
+SOUND <= TMP.DB_MAX_OUTPUT_PORT_TYPE
+
+

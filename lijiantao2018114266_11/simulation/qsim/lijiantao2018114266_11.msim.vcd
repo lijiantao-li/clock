@@ -1,0 +1,233 @@
+$comment
+	File created using the following command:
+		vcd file lijiantao2018114266_11.msim.vcd -direction
+$end
+$date
+	Thu Jul 16 22:58:36 2020
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module lijiantao2018114266_11_vlg_vec_tst $end
+$var reg 1 ! CLK $end
+$var reg 4 " NZFGE [3:0] $end
+$var reg 4 # NZFSHI [3:0] $end
+$var reg 4 $ NZHGE [3:0] $end
+$var reg 4 % NZHSHI [3:0] $end
+$var reg 1 & NZTZANJ $end
+$var reg 4 ' SZFGE [3:0] $end
+$var reg 4 ( SZFSHI [3:0] $end
+$var reg 4 ) SZHGE [3:0] $end
+$var reg 4 * SZHSHI [3:0] $end
+$var wire 1 + SOUND $end
+
+$scope module i1 $end
+$var wire 1 , gnd $end
+$var wire 1 - vcc $end
+$var wire 1 . unknown $end
+$var tri1 1 / devclrn $end
+$var tri1 1 0 devpor $end
+$var tri1 1 1 devoe $end
+$var wire 1 2 SOUND~output_o $end
+$var wire 1 3 CLK~input_o $end
+$var wire 1 4 NZTZANJ~input_o $end
+$var wire 1 5 SZFSHI[0]~input_o $end
+$var wire 1 6 NZFSHI[0]~input_o $end
+$var wire 1 7 SZFSHI[1]~input_o $end
+$var wire 1 8 NZFSHI[1]~input_o $end
+$var wire 1 9 TMP~0_combout $end
+$var wire 1 : SZFSHI[2]~input_o $end
+$var wire 1 ; NZFSHI[2]~input_o $end
+$var wire 1 < SZFSHI[3]~input_o $end
+$var wire 1 = NZFSHI[3]~input_o $end
+$var wire 1 > SZFGE[0]~input_o $end
+$var wire 1 ? NZFGE[0]~input_o $end
+$var wire 1 @ TMP~1_combout $end
+$var wire 1 A SZFGE[1]~input_o $end
+$var wire 1 B NZFGE[1]~input_o $end
+$var wire 1 C SZFGE[2]~input_o $end
+$var wire 1 D NZFGE[2]~input_o $end
+$var wire 1 E SZFGE[3]~input_o $end
+$var wire 1 F NZFGE[3]~input_o $end
+$var wire 1 G TMP~2_combout $end
+$var wire 1 H SZHSHI[0]~input_o $end
+$var wire 1 I NZHSHI[0]~input_o $end
+$var wire 1 J SZHSHI[1]~input_o $end
+$var wire 1 K NZHSHI[1]~input_o $end
+$var wire 1 L SZHSHI[2]~input_o $end
+$var wire 1 M NZHSHI[2]~input_o $end
+$var wire 1 N TMP~3_combout $end
+$var wire 1 O SZHSHI[3]~input_o $end
+$var wire 1 P NZHSHI[3]~input_o $end
+$var wire 1 Q SZHGE[0]~input_o $end
+$var wire 1 R NZHGE[0]~input_o $end
+$var wire 1 S SZHGE[1]~input_o $end
+$var wire 1 T NZHGE[1]~input_o $end
+$var wire 1 U TMP~4_combout $end
+$var wire 1 V SZHGE[2]~input_o $end
+$var wire 1 W NZHGE[2]~input_o $end
+$var wire 1 X SZHGE[3]~input_o $end
+$var wire 1 Y NZHGE[3]~input_o $end
+$var wire 1 Z TMP~5_combout $end
+$var wire 1 [ TMP~6_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b101 "
+b10 #
+b1 $
+b1 %
+1&
+b101 '
+b10 (
+b1 )
+b1 *
+0+
+0,
+1-
+x.
+1/
+10
+11
+02
+03
+14
+05
+06
+17
+18
+09
+0:
+0;
+0<
+0=
+1>
+1?
+1@
+0A
+0B
+1C
+1D
+0E
+0F
+1G
+1H
+1I
+0J
+0K
+0L
+0M
+1N
+0O
+0P
+1Q
+1R
+0S
+0T
+1U
+0V
+0W
+0X
+0Y
+1Z
+0[
+$end
+#50000
+1!
+13
+19
+1[
+12
+1+
+#100000
+0!
+03
+09
+0[
+02
+0+
+#150000
+1!
+13
+19
+1[
+12
+1+
+#200000
+0!
+03
+09
+0[
+02
+0+
+#250000
+1!
+13
+19
+1[
+12
+1+
+#300000
+0!
+03
+09
+0[
+02
+0+
+#350000
+1!
+13
+19
+1[
+12
+1+
+#400000
+0&
+0!
+04
+03
+09
+0[
+02
+0+
+#450000
+1!
+13
+#500000
+0!
+03
+#550000
+1!
+13
+#600000
+0!
+03
+#650000
+1!
+13
+#700000
+0!
+03
+#750000
+1!
+13
+#800000
+0!
+03
+#850000
+1!
+13
+#900000
+0!
+03
+#950000
+1!
+13
+#1000000

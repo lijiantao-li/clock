@@ -1,0 +1,185 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
+
+// DATE "07/08/2020 19:38:15"
+
+// 
+// Device: Altera 5CSEMA5F31C6 Package FBGA896
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module lijiantao2018114266_04 (
+	CLK_4HZ,
+	CLK_2HZ,
+	CLK_1HZ);
+input 	CLK_4HZ;
+output 	CLK_2HZ;
+output 	CLK_1HZ;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \CLK_2HZ~output_o ;
+wire \CLK_1HZ~output_o ;
+wire \CLK_4HZ~input_o ;
+wire \TMP[0]~1_combout ;
+wire \TMP[1]~0_combout ;
+wire [1:0] TMP;
+
+
+cyclonev_io_obuf \CLK_2HZ~output (
+	.i(TMP[0]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\CLK_2HZ~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \CLK_2HZ~output .bus_hold = "false";
+defparam \CLK_2HZ~output .open_drain_output = "false";
+defparam \CLK_2HZ~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \CLK_1HZ~output (
+	.i(TMP[1]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\CLK_1HZ~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \CLK_1HZ~output .bus_hold = "false";
+defparam \CLK_1HZ~output .open_drain_output = "false";
+defparam \CLK_1HZ~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \CLK_4HZ~input (
+	.i(CLK_4HZ),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\CLK_4HZ~input_o ));
+// synopsys translate_off
+defparam \CLK_4HZ~input .bus_hold = "false";
+defparam \CLK_4HZ~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \TMP[0]~1 (
+// Equation(s):
+// \TMP[0]~1_combout  = !TMP[0]
+
+	.dataa(!TMP[0]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\TMP[0]~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \TMP[0]~1 .extended_lut = "off";
+defparam \TMP[0]~1 .lut_mask = 64'hAAAAAAAAAAAAAAAA;
+defparam \TMP[0]~1 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \TMP[0] (
+	.clk(\CLK_4HZ~input_o ),
+	.d(\TMP[0]~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(TMP[0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \TMP[0] .is_wysiwyg = "true";
+defparam \TMP[0] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \TMP[1]~0 (
+// Equation(s):
+// \TMP[1]~0_combout  = !TMP[0] $ (!TMP[1])
+
+	.dataa(!TMP[0]),
+	.datab(!TMP[1]),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\TMP[1]~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \TMP[1]~0 .extended_lut = "off";
+defparam \TMP[1]~0 .lut_mask = 64'h6666666666666666;
+defparam \TMP[1]~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \TMP[1] (
+	.clk(\CLK_4HZ~input_o ),
+	.d(\TMP[1]~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(TMP[1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \TMP[1] .is_wysiwyg = "true";
+defparam \TMP[1] .power_up = "low";
+// synopsys translate_on
+
+assign CLK_2HZ = \CLK_2HZ~output_o ;
+
+assign CLK_1HZ = \CLK_1HZ~output_o ;
+
+endmodule
